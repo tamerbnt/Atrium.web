@@ -1,0 +1,43 @@
+.headline {
+  /* Inherits all sizing, weight, color, letter-spacing from parent/global */
+  /* Only structural properties here */
+}
+
+.wordWrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  /* Small gap between wrappers creates natural word spacing */
+  margin-right: 0.22em;
+}
+
+.wordWrapper:last-child {
+  margin-right: 0;
+}
+
+.space {
+  display: none; /* Space handled by margin-right on wrapper */
+}
+
+.word {
+  display: inline-block;
+  transform: translateY(110%);
+  opacity: 0;
+  animation: wordReveal 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  /* animation-delay comes from inline style */
+}
+
+@keyframes wordReveal {
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word {
+    animation: none;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

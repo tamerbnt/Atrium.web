@@ -1,0 +1,97 @@
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-terracotta-deep);
+  color: var(--color-warm-linen);
+  padding: 12px 28px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 150ms ease, transform 150ms ease;
+  white-space: nowrap;
+}
+
+.btnPrimary:hover {
+  background: #7A3422;
+  transform: scale(1.02);
+}
+
+.btnPrimary:active {
+  transform: scale(0.98);
+  transition-duration: 100ms;
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--color-muted-dark);
+  padding: 12px 28px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #3A2E28;
+  transition: color 150ms ease, border-color 150ms ease, transform 150ms ease;
+  white-space: nowrap;
+}
+
+.btnSecondary:hover {
+  color: var(--color-nav-link-hover);
+  border-color: var(--color-muted-dark);
+  transform: scale(1.02);
+}
+
+.btnSecondary:active {
+  transform: scale(0.98);
+  transition-duration: 100ms;
+}
+
+.primaryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.undetectedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.btnUndetected {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #251E18;
+  color: var(--color-muted-dark);
+  padding: 12px 28px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid var(--color-app-border);
+  transition: background 150ms ease, color 150ms ease, transform 150ms ease;
+  white-space: nowrap;
+}
+
+.btnUndetected:hover {
+  background: #2E241C;
+  color: var(--color-nav-link-hover);
+  transform: scale(1.02);
+}
+
+.arrowIcon {
+  flex-shrink: 0;
+}
+
+.fileMeta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-faint-dark);
+}

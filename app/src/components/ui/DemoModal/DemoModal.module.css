@@ -1,0 +1,72 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 21, 16, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background: var(--color-app-dark);
+  border-radius: var(--radius-frame);
+  border: 1px solid var(--color-app-border);
+  overflow: hidden;
+}
+
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-muted-dark);
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 6px;
+  transition: color 150ms ease, background 150ms ease;
+}
+
+.closeButton:hover {
+  color: #F0EBE5;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.videoContainer {
+  aspect-ratio: 16 / 9;
+  background: var(--color-app-surface);
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--color-muted-dark);
+}
+
+.placeholder p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #F0EBE5;
+}
+
+.placeholder span {
+  font-size: 13px;
+  color: var(--color-faint-dark);
+}

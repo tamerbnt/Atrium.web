@@ -1,0 +1,1 @@
+export { SplitHeadline } from './SplitHeadline';

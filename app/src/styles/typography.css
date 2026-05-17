@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.text-hero {
+  font-size: var(--text-hero);
+  font-weight: 500;
+  letter-spacing: var(--ls-hero);
+  line-height: var(--lh-hero);
+}
+
+.text-section {
+  font-size: var(--text-section);
+  font-weight: 500;
+  letter-spacing: var(--ls-section);
+  line-height: var(--lh-section);
+}
+
+.text-feature {
+  font-size: var(--text-feature);
+  font-weight: 500;
+  letter-spacing: var(--ls-feature);
+  line-height: var(--lh-feature);
+}
+
+.text-body-lg {
+  font-size: var(--text-body-lg);
+  font-weight: 400;
+  line-height: var(--lh-body);
+}
+
+.text-body {
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: var(--lh-body);
+}
+
+.text-label {
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: var(--ls-label);
+  line-height: var(--lh-label);
+  text-transform: uppercase;
+}
+
+.text-caption {
+  font-size: var(--text-caption);
+  font-weight: 400;
+  letter-spacing: var(--ls-caption);
+  line-height: var(--lh-caption);
+}
+
+.text-mono {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  font-weight: 400;
+  line-height: var(--lh-caption);
+}

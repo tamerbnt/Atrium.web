@@ -1,0 +1,126 @@
+.verticals {
+  background: var(--color-dark-umber);
+  padding: 100px 0;
+}
+
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-faint-dark);
+  text-align: center;
+  margin-bottom: 12px;
+  line-height: var(--lh-label);
+}
+
+.headline {
+  font-size: var(--text-section);
+  font-weight: 500;
+  color: #F0EBE5;
+  letter-spacing: var(--ls-section);
+  line-height: var(--lh-section);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 64px;
+}
+
+.tab {
+  padding: 8px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #251E18;
+  color: var(--color-muted-dark);
+  border: 1px solid #3A2E28;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.tab:hover {
+  background: #2E241C;
+  color: #F0EBE5;
+}
+
+.tab.active {
+  background: var(--color-terracotta-deep);
+  color: var(--color-warm-linen);
+  border-color: var(--color-terracotta-deep);
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panelHeadline {
+  font-size: var(--text-feature);
+  font-weight: 500;
+  color: #F0EBE5;
+  letter-spacing: var(--ls-feature);
+  line-height: var(--lh-feature);
+}
+
+.panelBody {
+  font-size: var(--text-body);
+  color: var(--color-muted-dark);
+  line-height: var(--lh-body);
+  max-width: 44ch;
+}
+
+.imgCol {
+  will-change: transform, opacity;
+}
+
+@media (max-width: 1199px) {
+  .panel {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .imgCol {
+    order: -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .verticals {
+    padding: 60px 0;
+  }
+
+  .headline {
+    font-size: 28px;
+  }
+
+  .tabs {
+    margin-bottom: 40px;
+  }
+
+  .panel {
+    gap: 32px;
+  }
+
+  .panelHeadline {
+    font-size: 22px;
+  }
+}
